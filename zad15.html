@@ -1,0 +1,30 @@
+<html>
+    <head>
+<title>zadanie 15</title>
+    </head>
+<body>
+
+ <script language="JavaScript">
+var x1_ost=prompt("1 liczba=","");
+var x2_ost=prompt("2 liczba=","");
+ var a=parseFloat(x1_ost);
+ var b=parseFloat(x2_ost);
+
+ document.write("Wczytane liczby: x1=",a," ","x2=",b,"<br>");
+var y;
+
+y=(3*Math.pow(x1_ost,(5/(5+2))));
+document.write("y=",y,"<br>");
+ var y1;
+
+y1=(2*Math.cos(x1_ost)+2*Math.sin(x1_ost));
+document.write("y1=",y1,"<br>");
+ var y3;
+y3=(Math.sqrt(Math.sqrt(Math.pow(x1_ost,5)+(2*Math.pow(x2_ost,4))))*Math.abs(x1_ost-x2_ost));
+document.write("y3=",y3,"<br>"); //dwa razy wyliczam pierwiastek z2 zeby miec wynik jak z wziecia pierwiastka z3
+
+
+ </script>
+ 
+</body>
+</html>

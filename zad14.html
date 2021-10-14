@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div style="color:rgb(89, 255, 56);font-size:55px;">
+            <script type="text/javascript">
+                var no_ost=prompt("Ilośc atomów=","");
+                var t_ost=prompt("Czas rozpadu pierwiastka=","");
+                var t12_ost=prompt("Okres połowicznego zaniku=","");
+                //no 1, t 1, t12 5700 = N=0.9998784 i L=0.0001216
+                var no=parseFloat(no_ost);
+                var t=parseFloat(t_ost);
+                var t12=parseFloat(t12_ost);
+                var l; //lambda
+                l=(Math.log(2)/t12).toFixed(7);
+                var n;
+                n=(no*Math.pow(Math.E,-l*t)).toFixed(7);
+                document.write("N0="+no+"[sztuk]"+"<br>");
+                document.write("t="+t+"[lat]"+"<br>");
+                document.write("t1/2="+t12+"[lat]"+"<br>");
+                document.write("Lambda="+l+"[1/rok]"+"<br>");
+                document.write("N="+n+"[sztuk]"+"<br>");
+
+                // Jakub Ostrowski
+            </script>
+        </div>
+
+    </body>
+</html>
