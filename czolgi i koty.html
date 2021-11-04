@@ -1,0 +1,73 @@
+<html>
+<head>
+    <!--koty wlasciciele czolgow-->
+    <title> czolgi i koty </title>
+<script language="JavaScript">
+
+function czolg(nazwa,panstwo,dlugosc,szerokosc,masa,predkosc,zesieg,moc)
+{
+this.nazwa=nazwa;
+this.panstwo=panstwo;
+this.dlugosc=dlugosc;
+this.szerokosc=szerokosc;
+this.masa=masa;
+this.predkosc=predkosc;
+this.zesieg=zesieg;
+this.moc=moc;
+}
+
+function kot(nazwa,pochodzenie,EMS,futro,ogon,kondycja)
+{
+this.nazwa=nazwa;
+this.pochodzenie=pochodzenie;
+this.EMS=EMS;
+this.futro=futro;
+this.ogon=ogon;
+this.kondycja=kondycja;
+}
+
+c1 = new czolg("M1A2 Abrams","USA","9.83","3.75","62500","48.3","465","24.5");
+c2 = new czolg("T-80","ZSRR","9.9","3.4","42500","48","500","23.5");
+c3 = new czolg("Leopard 2","Niemcy","9.67","35400","55.15","56","550","27.27");
+c4 = new czolg("T-90","Rosja","6.86","3.37","46500","65","650","od 18.1 do 23.7");
+c5 = new czolg("Leclerc","Francja","9.87","3.71","62000","55","550","???");
+c6 = new czolg("Tiger (P)","III Rzesza","9.34","3.38","57000-59000","???","80-110","???");
+
+k1 = new kot("Sfinks","Kanada","SPH","25","Brak danych","5");
+k2 = new kot("Kot syberyjski","Syberia","SIB","25","5","5");
+k3 = new kot("Kot norweski leśny","Skandynawia","NFO","25","10","5");
+k4 = new kot("Kot bengalski","USA","BEN","20","Brak danych","5");
+k5 = new kot("Kot syjamski (tradycyjny)","Tajlandia","SIA","10","Brak danych","5");
+k6 = new kot("Ragdoll","USA","RAG","10","5","5");
+k7 = new kot("Kot rosyjski niebieski","Rosja","RUS","20","Brak danych","5");
+k8 = new kot("Maine Coon","Ameryka Północna","MCO","20","Brak danych","5");
+k9 = new kot("Kot perski","Iran","PER","30","Brak danych","5");
+k10 = new kot("Kot brytyjski krótkowłosy","Wielka Brytania","BRI","15","Brak danych","5");
+
+document.write(""+k2.nazwa+", pochodzenia: "+k2.pochodzenie+", o kodzie EMS: "+k2.EMS+", futrze (Punkty): "+k2.futro+", ogonie (Punkty): "+k2.ogon+" i kondycji (Punkty): "+k2.kondycja+", jest właścicielem czołgu:"); 
+document.write(" "+c1.nazwa+", panstwa: "+c1.panstwo+", o dlugosci: "+c1.dlugosc+"m, szerokosci: "+c1.szerokosc+"m, masie: "+c1.masa+"kg, predkosci: "+c1.predkosc+"km/h, zasiegu: "+c1.zesieg+"km i mocy: "+c1.moc+"KM/t <br>"); 
+document.write("<br>");
+
+document.write(" "+c2.nazwa+", panstwa: "+c2.panstwo+", o dlugosci: "+c2.dlugosc+"m, szerokosci: "+c2.szerokosc+"m, masie: "+c2.masa+"kg, predkosci: "+c2.predkosc+"km/h, zasiegu: "+c2.zesieg+"km i mocy: "+c2.moc+"KM/t <br>"); 
+document.write("<br>");
+
+document.write(" "+c3.nazwa+", panstwa: "+c3.panstwo+", o dlugosci: "+c3.dlugosc+"m, szerokosci: "+c3.szerokosc+"m, masie: "+c3.masa+"kg, predkosci: "+c3.predkosc+"km/h, zasiegu: "+c3.zesieg+"km i mocy: "+c3.moc+"KM/t <br>"); 
+document.write("<br>");
+
+document.write(" "+c4.nazwa+", panstwa: "+c4.panstwo+", o dlugosci: "+c4.dlugosc+"m, szerokosci: "+c4.szerokosc+"m, masie: "+c4.masa+"kg, predkosci: "+c4.predkosc+"km/h, zasiegu: "+c4.zesieg+"km i mocy: "+c4.moc+"KM/t <br>"); 
+document.write("<br>");
+
+document.write(" "+c5.nazwa+", panstwa: "+c5.panstwo+", o dlugosci: "+c5.dlugosc+"m, szerokosci: "+c5.szerokosc+"m, masie: "+c5.masa+"kg, predkosci: "+c5.predkosc+"km/h, zasiegu: "+c5.zesieg+"km i mocy: "+c5.moc+"KM/t <br>"); 
+document.write("<br>");
+
+document.write(" "+c6.nazwa+", panstwa: "+c6.panstwo+", o dlugosci: "+c6.dlugosc+"m, szerokosci: "+c6.szerokosc+"m, masie: "+c6.masa+"kg, predkosci: "+c6.predkosc+"km/h, zasiegu: "+c6.zesieg+"km i mocy: "+c6.moc+"KM/t <br>"); 
+document.write("<br>");
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
