@@ -1,0 +1,59 @@
+<html> 
+<head> 
+<title>
+ zad20 ostrowski
+</title>
+
+ <script language="JavaScript">
+function V(r,h, w)
+{
+ r_liczba=parseFloat(r)
+ h_liczba=parseFloat(h)
+ w_liczba=parseFloat(w)
+ V_wynik=( r_liczba+h_liczba)*w_liczba/2
+ document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
+ alert("P="+V_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="P="+V_wynik.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+}
+function Pc(r,h,w,c)
+{
+ r_liczba=parseFloat(r)
+ h_liczba=parseFloat(h)
+ w_liczba=parseFloat(w)
+ c_liczba=parseFloat(c)
+ var c_liczba=Math.sqrt(Math.pow((r_liczba-h_liczba)/2, 2)+Math.pow(w_liczba, 2))
+
+ Pc_wynik=r_liczba+h_liczba+2*c_liczba
+ document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+ alert("Obw="+Pc_wynik.toFixed(2)+" cm");
+ pokaz2.innerHTML="Obw="+Pc_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie pola i obwodu trapezu
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value,this.wysokosch.value); 
+Pc(this.promien.value,this.wysokosc.value,this.wysokosch.value);return false"> 
+Podaj a=
+<input size="6" name="promien">
+Podaj b=
+<input size="6" name="wysokosc">
+Podaj h=
+<input size="6" name="wysokosch">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+P=
+<input size="6" name="obj">
+Obw=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
