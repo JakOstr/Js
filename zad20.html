@@ -21,7 +21,7 @@ function Pc(r,h,w,c)
  h_liczba=parseFloat(h)
  w_liczba=parseFloat(w)
  c_liczba=parseFloat(c)
- var c_liczba=Math.sqrt(Math.pow((r_liczba-h_liczba)/2, 2)+Math.pow(w_liczba, 2))
+ var c_liczba=Math.sqrt(Math.pow(Math.abs((r_liczba-h_liczba)), 2)+Math.pow(w_liczba, 2))
 
  Pc_wynik=r_liczba+h_liczba+2*c_liczba
  document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
