@@ -1,0 +1,52 @@
+<html> 
+<head> 
+<title>
+ Zad21
+</title>
+ <script language="JavaScript">
+function wysokosc_ost(odl,s)
+{
+ odl_ost=parseFloat(odl)
+ s_ost=parseFloat(s)//przyprostokatne
+ V_wynik= Math.sqrt(Math.pow(odl, 2)+Math.pow(s, 2))
+ document.getElementsByName('drabina')[0].value=V_wynik.toFixed(2); /* na dokument */
+ pokaz1.innerHTML="Drabina="+V_wynik.toFixed(2);  /* do tabeli */
+}
+function tagens_ost(odl1,s1)
+{
+odl_ost=parseFloat(odl1)
+s_ost=parseFloat(s1)
+ //ctg
+ wynik=Math.atan2(odl1,s1).toFixed(1)
+ wynik_a=180*wynik
+ Pc_wynik=wynik_a/3,14
+ document.getElementsByName('alfa')[0].value=Pc_wynik.toFixed(2);;
+ pokaz2.innerHTML="Alfa="+Pc_wynik.toFixed(2);;
+}
+ </script>
+</head> 
+<body> 
+Obliczanie dlugosci i nachylenia drabiny
+<br> <br>
+<form name="formularz" action="..." onsubmit="wysokosc_ost(this.szerokosc.value,this.przekatna.value); 
+tagens_ost(this.szerokosc.value,this.przekatna.value);return false"> 
+Podaj d=
+<input size="6" name="szerokosc">
+Podaj x=
+<input size="6" name="przekatna">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina
+<input size="6" name="drabina">
+Alfa
+<input size="6" name="alfa">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
