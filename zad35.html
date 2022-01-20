@@ -1,0 +1,42 @@
+<html>
+<!-- metatagi -->
+<head>
+<script type="text/javascript">
+function wyswietlDate(){
+ var Today = new Date();
+ var Month = (Today.getMonth()+1);
+ var Day = Today.getDate();
+ var Year = Today.getFullYear();
+ if(Year <= 99) Year += 1900
+ return Day + "-" + Month + "-" + Year;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+     document.write("Jakub Ostrowski ");
+ document.write("dzisiejsza data: " + wyswietlDate()+"<br>");
+
+ document.write("mam przeglądarkę= "+navigator.appName+"<br>");
+
+ document.write("wersja przeglądarki= "+navigator.appVersion+"<br>");
+
+ document.write("wszystkie dane przegladarki= "+navigator.userAgent+"<br>");
+
+
+ 
+ var agent = navigator.userAgent.toLowerCase();
+ var nazwa = "nieznany";
+ if(agent.indexOf('windows') != -1) {nazwa = "Windows";}
+ if(agent.indexOf('linux') != -1) {nazwa = "Linux";}
+ else if(agent.indexOf('mac') != -1) {nazwa = "MacOS";}
+ document.write("System operacyjny= " + nazwa+"<br>");
+
+ 
+ document.write("tryb pracy przeglądarki= "+navigator.onLine+"<br>");
+
+ document.write("obsługa java= "+navigator.javaEnabled()+"<br>");
+
+ </script>
+</body>
+</html>
