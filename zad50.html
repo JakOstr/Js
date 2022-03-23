@@ -1,0 +1,26 @@
+<html>
+<head>
+
+   <title> zad50 ostrowski</title>
+   
+<script type="text/javascript">
+function logowanie(dane) 
+{
+ if(dane.haslo.value=="k")
+ {
+    window.location.replace("działa");
+ }
+ else
+ {
+ window.location.replace("");
+ }
+}
+</script>
+</head>
+<body>
+ <form name="formularz">
+Hasło: <input type="password" name="haslo"/><br><br>
+<input type="submit" value="Logowanie..." onClick="logowanie()"/><br><br>
+ </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <title>zad48</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ </head>
+ <body>
+     <script>
+tekst1 = "Obiekty języka JavaScript"
+dl = tekst1.length
+document.write(dl+"<br>")
+
+
+
+tekstt = "Obiekty języka JavaScriptttttt"
+xx = tekstt.substring (15,19)
+document.write(xx+"<br>")
+
+
+
+tekst2 = "Obiekty języka JavaScript"
+xxx = tekst2.toLowerCase()
+/*Zostanie zwrócony łańcuch obiekty języka javascript */
+document.write(xxx+"<br>")
+
+
+
+String.prototype.duzaLitera = function() { return this.charAt(0).toUpperCase() + this.substr(1);}
+var tx1 = 'komputer';
+document.write(tx1.duzaLitera()+"<br>")
+
+
+
+
+tekst = "Obiekty języka JavaScript"
+x = tekst.toUpperCase()
+document.write(x+"<br>")
+/*Zostanie zwrócony łańcuch OBIEKTY JĘZYKA JAVASCRIPT*/
+
+
+    var dat_cz = new Date();
+    document.write(dat_cz+"<br>")
+
+    
+    var data = new Date(2018,2,27);
+    document.write(data+"<br>")
+</script>
+
+ </body>
+</html>
