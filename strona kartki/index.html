@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<! Jakub Ostrowski 5k!>
+  <meta charset="UTF-8">
+  <title>Temat 9 - System wysyłki kart online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wybor">
+<h2>Wybierz kartę:</h2>
+<select id="wyborr">
+<option value="urodziny">Karta urodzinowa</option>
+<option value="podziekowania">Karta z podziękowaniami</option>
+</select>
+</div>
+
+<div class="edycja">
+<h2>Edycja zawartości karty:</h2>
+<label for="nadawca">Nazwa nadawcy:</label>
+<input type="text" id="nadawca">
+
+<label for="Adres">Adres odbiorcy:</label>
+<input type="text" id="Adres">
+
+<label for="wiad">Treść karty:</label>
+<textarea id="wiad"></textarea>
+</div>
+<button onclick="funkcja()">Wyślij kartę</button>
+<script src="script.js"></script>
+
+</body>
+</html>
